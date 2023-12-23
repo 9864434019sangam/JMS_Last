@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Register-and-Login
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
@@ -159,6 +160,20 @@ Partial Class Form1
         Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
+        SuspendLayout()
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "Form1"
+        Text = "Login"
+        ResumeLayout(False)
+        master
     End Sub
 
     Friend WithEvents Label1 As Label

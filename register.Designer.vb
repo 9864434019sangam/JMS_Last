@@ -85,7 +85,6 @@ Partial Class register
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(PictureBox1)
         Panel1.Controls.Add(Label1)
-        Panel1.Dock = DockStyle.Fill
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(507, 695)

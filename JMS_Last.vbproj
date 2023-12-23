@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="170.21.0" />
   </ItemGroup>
 
   <ItemGroup>

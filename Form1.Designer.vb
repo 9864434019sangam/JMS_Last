@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Register-and-Login
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
@@ -41,7 +40,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(204, 239)
         Label1.Name = "Label1"
         Label1.Size = New Size(77, 28)
@@ -139,7 +138,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(489, 648)
         Controls.Add(Button2)
@@ -150,9 +149,11 @@ Partial Class Form1
         Controls.Add(PictureBox1)
         Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form1"
+        Text = "Login"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
@@ -160,21 +161,9 @@ Partial Class Form1
         Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
-        SuspendLayout()
-        ' 
-        ' Form1
-        ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        FormBorderStyle = FormBorderStyle.FixedSingle
-        MaximizeBox = False
-        MinimizeBox = False
-        Name = "Form1"
-        Text = "Login"
-        ResumeLayout(False)
-        master
+        ' master
     End Sub
+
 
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox

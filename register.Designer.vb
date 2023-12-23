@@ -26,11 +26,11 @@ Partial Class register
         Button2 = New Button()
         CheckBox_Mpass = New CheckBox()
         CheckBox_Upass = New CheckBox()
-        DateTimePicker1 = New DateTimePicker()
+        dob_picker = New DateTimePicker()
         Button1 = New Button()
         btn_register = New Button()
-        RadioButton2 = New RadioButton()
-        RadioButton1 = New RadioButton()
+        RadioButton_female = New RadioButton()
+        RadioButton_male = New RadioButton()
         txt_email = New TextBox()
         txt_phoneno = New TextBox()
         Label11 = New Label()
@@ -45,7 +45,7 @@ Partial Class register
         Label5 = New Label()
         txt_username = New TextBox()
         Label4 = New Label()
-        TextBox1 = New TextBox()
+        txt_lastname = New TextBox()
         txt_firstname = New TextBox()
         Label3 = New Label()
         Label2 = New Label()
@@ -60,11 +60,11 @@ Partial Class register
         Panel1.Controls.Add(Button2)
         Panel1.Controls.Add(CheckBox_Mpass)
         Panel1.Controls.Add(CheckBox_Upass)
-        Panel1.Controls.Add(DateTimePicker1)
+        Panel1.Controls.Add(dob_picker)
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(btn_register)
-        Panel1.Controls.Add(RadioButton2)
-        Panel1.Controls.Add(RadioButton1)
+        Panel1.Controls.Add(RadioButton_female)
+        Panel1.Controls.Add(RadioButton_male)
         Panel1.Controls.Add(txt_email)
         Panel1.Controls.Add(txt_phoneno)
         Panel1.Controls.Add(Label11)
@@ -79,7 +79,7 @@ Partial Class register
         Panel1.Controls.Add(Label5)
         Panel1.Controls.Add(txt_username)
         Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(TextBox1)
+        Panel1.Controls.Add(txt_lastname)
         Panel1.Controls.Add(txt_firstname)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
@@ -120,12 +120,12 @@ Partial Class register
         CheckBox_Upass.TabIndex = 43
         CheckBox_Upass.UseVisualStyleBackColor = True
         ' 
-        ' DateTimePicker1
+        ' dob_picker
         ' 
-        DateTimePicker1.Location = New Point(259, 482)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(180, 27)
-        DateTimePicker1.TabIndex = 42
+        dob_picker.Location = New Point(259, 482)
+        dob_picker.Name = "dob_picker"
+        dob_picker.Size = New Size(180, 27)
+        dob_picker.TabIndex = 42
         ' 
         ' Button1
         ' 
@@ -149,27 +149,27 @@ Partial Class register
         btn_register.Text = "Register"
         btn_register.UseVisualStyleBackColor = False
         ' 
-        ' RadioButton2
+        ' RadioButton_female
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(137, 485)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(78, 24)
-        RadioButton2.TabIndex = 41
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "Female"
-        RadioButton2.UseVisualStyleBackColor = True
+        RadioButton_female.AutoSize = True
+        RadioButton_female.Location = New Point(137, 485)
+        RadioButton_female.Name = "RadioButton_female"
+        RadioButton_female.Size = New Size(78, 24)
+        RadioButton_female.TabIndex = 41
+        RadioButton_female.TabStop = True
+        RadioButton_female.Text = "Female"
+        RadioButton_female.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton1
+        ' RadioButton_male
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(68, 485)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(63, 24)
-        RadioButton1.TabIndex = 40
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "Male"
-        RadioButton1.UseVisualStyleBackColor = True
+        RadioButton_male.AutoSize = True
+        RadioButton_male.Location = New Point(68, 485)
+        RadioButton_male.Name = "RadioButton_male"
+        RadioButton_male.Size = New Size(63, 24)
+        RadioButton_male.TabIndex = 40
+        RadioButton_male.TabStop = True
+        RadioButton_male.Text = "Male"
+        RadioButton_male.UseVisualStyleBackColor = True
         ' 
         ' txt_email
         ' 
@@ -295,12 +295,12 @@ Partial Class register
         Label4.TabIndex = 5
         Label4.Text = "Username"
         ' 
-        ' TextBox1
+        ' txt_lastname
         ' 
-        TextBox1.Location = New Point(260, 287)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(180, 27)
-        TextBox1.TabIndex = 4
+        txt_lastname.Location = New Point(260, 287)
+        txt_lastname.Name = "txt_lastname"
+        txt_lastname.Size = New Size(180, 27)
+        txt_lastname.TabIndex = 4
         ' 
         ' txt_firstname
         ' 
@@ -372,11 +372,11 @@ Partial Class register
     Friend WithEvents Label5 As Label
     Friend WithEvents txt_username As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_lastname As TextBox
     Friend WithEvents txt_firstname As TextBox
     Friend WithEvents btn_register As Button
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton_female As RadioButton
+    Friend WithEvents RadioButton_male As RadioButton
     Friend WithEvents txt_email As TextBox
     Friend WithEvents txt_phoneno As TextBox
     Friend WithEvents Label11 As Label
@@ -388,7 +388,7 @@ Partial Class register
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dob_picker As DateTimePicker
     Friend WithEvents CheckBox_Upass As CheckBox
     Friend WithEvents CheckBox_Mpass As CheckBox
     Friend WithEvents Button2 As Button

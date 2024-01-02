@@ -1,15 +1,13 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
-Imports Microsoft.Data.SqlClient
+﻿Imports Microsoft.Data.SqlClient
 
-Public Class Form1
+Public Class login
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Application.Exit()
+    End Sub
     Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles btnregister1.Click
         Hide()
         register.Show()
     End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Application.Exit()
-    End Sub
-
     Private Sub CheckBox_Upass_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox_Upass.CheckedChanged
         If CheckBox_Upass.Checked = True Then
             txt_Upassword.UseSystemPasswordChar = False
@@ -17,7 +15,6 @@ Public Class Form1
             txt_Upassword.UseSystemPasswordChar = True
         End If
     End Sub
-
     Private connection As SqlConnection ' Declare connection at class level
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

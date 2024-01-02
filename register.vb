@@ -24,7 +24,7 @@ Public Class register
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Dispose()
-        Form1.Show()
+        login.Show()
     End Sub
     Private Sub btn_register_Click(sender As Object, e As EventArgs) Handles btn_register.Click
         Dim builder As New SqlConnectionStringBuilder(
